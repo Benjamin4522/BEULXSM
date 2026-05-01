@@ -1,0 +1,25 @@
+[project]
+name = "beulxsm"
+version = "0.2.0"
+description = "BEULXSM - Advanced Autonomous Coding & Offensive AI Agent System"
+requires-python = ">=3.11"
+dependencies = [
+    "litellm>=1.52.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.1",
+    "together>=2.11.0",
+    "streamlit>=1.30.0",
+    "chromadb>=0.6.0",
+    "langchain>=0.3.0",
+    "langgraph>=0.2.0",
+    "rich>=13.9.0",
+    "tenacity>=9.0.0",
+    "playwright>=1.48.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "black", "ruff", "mypy"]
+
+[tool.uv]
+dev-dependencies = ["pytest", "black", "ruff"]
